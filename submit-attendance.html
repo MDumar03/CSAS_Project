@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Submition</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(b3.jpg) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+        }
+        .header{
+            background-color: white;
+            padding: 2px;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        #logo{
+            padding: 5px;
+        }
+     #a2{
+        text-decoration: none;
+        color: black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     }
+     #icon{
+        padding: 2px;
+     }
+
+     .main{
+                width: 250px;
+                margin: 0px auto;
+
+                position: relative;
+                top: 170px;
+                text-align: center;
+                 
+                background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(blur-1.jpg) ;
+                background-repeat: no-repeat;
+                background-size: cover; 
+                padding: 20px;
+
+                border: solid 3px white;
+                border-radius: 10px;
+            
+
+            }
+   .reg{
+    color: white;
+   }
+   #idnumber{
+                width: 200px;
+                padding: 7px;
+                background: transparent;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: lighter;
+                color: white;
+   } 
+   #session{
+                width: 200px;
+                padding: 7px;
+                background: transparent;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: lighter;
+                color: white;
+   }
+   #btn-2{
+                width: 200px;
+                padding: 5px;
+                border-radius: 5px;
+                border: solid 3px white;
+            }
+            #btn-2:hover{
+                border: solid 3px black; 
+               transition: 0.6s;
+            }
+            .op1{
+            background-color:aliceblue;
+            font-weight: bold;
+            color: black;
+        }
+        .main a{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="csas.html">
+               <img src="logo.png" alt="Logo" width="120" height="50" class="d-inline-block align-text-top" id="logo">
+              </a>
+              <a href="profile.html" id="a2"><h3 class="logop">My Profile <img src="icon.png" alt="" height="40" width="40" id="icon"></h3></a>
+            </div>
+          </nav>   
+    </div>
+    <div class="main">
+        <br>
+        <h2 class="reg">Register...</h2>
+        <br>
+        <input type="text" placeholder="ID Number:" id="idnumber">
+        <br><br>
+        <select name="session" id="session" >
+            <option value="session"  class="op1">Session</option>
+            <option value="9 AM - 11 AM"  class="op1">9 AM - 11 AM</option>
+            <option value="11 AM - 1 PM" class="op1">11 AM - 1 PM</option>
+            <option value="2 PM - 4 PM" class="op1">2 PM - 4 PM</option>
+            <option value="4 PM - 6 PM" class="op1">4 PM - 6 PM</option>    
+        </select>
+        <br><br>
+        <a href="" id="a3">
+            <button id="btn-2" onclick="any()">SUBMIT</button>
+        </a>
+
+    </div>
+    
+
+    
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="popper.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        
+        function any(){
+            var idn=document.getElementById("idnumber").value;
+            var time=document.getElementById("session").value;
+
+        window.alert("Dear"+" "+"student,"+" "+"your"+" "+"attendance"+" "+"has been"+" "+"submitted."+" "+"ID:"+" "+idn+" "+"and"+" Session:"+" "+time+".");    
+        }
+    </script>
+</body>
+</html>

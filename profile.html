@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            background-color: white;
+            padding: 2px;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        #logo{
+            padding: 5px;
+        }
+        #a4{
+        text-decoration: none;
+        color: black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+         background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(LSBU_Hub.jpg) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+        }
+        .main{
+            width: 250px;
+                margin: 0px auto;
+
+                position: relative;
+                top: 170px;
+                text-align: center;
+                 
+                background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(blur-3.jpg) ;
+                background-repeat: no-repeat;
+                background-size: cover; 
+                padding: 20px;
+
+                border: solid 3px white;
+                border-radius: 10px;
+            
+
+        }
+        #account2{
+            width: 200px;
+                padding: 7px;
+                background: white;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: lighter;
+                color: black;   
+        }
+        #account2:hover{
+              border: solid 3px black; 
+               transition: 0.6s;
+        }
+        #a5{
+
+        }
+        #btn-5{
+            width: 200px;
+                padding: 7px;
+                background: white;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: lighter;
+                color: black;
+        }
+        #myp{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="csas.html">
+                   <img src="logo.png" alt="Logo" width="120" height="50" class="d-inline-block align-text-top" id="logo">
+                  </a>
+                  <a href="submit-attendance.html" id="a4"><h3 class="logop"> < Back</a>
+                </div>
+              </nav>   
+        </div>
+    </div>
+    
+    <div class="main">
+            <br>
+            <h2 id="myp"> <img src="icon.png" alt="" height="40" width="40"> My Profile</h2>
+            <br>
+            <button id="account2"   onclick="func()">Loged Account</button><br><br>
+            <a href="previous_attendance.xlsx" id="a5"><button id="btn-5">Download Attendance</button></a>
+            <br><br>
+            <a href="feedback.html" id="a5"><button id="btn-5">Feedback</button></a>
+            <br>
+    </div>
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="popper.js"></script>
+    <script src="jquery.js"></script>
+    <script src="js-1.js"></script>
+    <script>
+        function func(){
+
+    window.alert("Now you are connected: s4207150@lsbu.ac.uk"+" ");
+}
+    </script>
+</body>
+</html>

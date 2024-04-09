@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            background-color: white;
+            padding: 2px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: black;
+
+        }
+        #logo{
+            padding: 5px;
+        }
+       #a2{
+        text-decoration: none;
+        color: black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     }
+
+        body{
+
+         background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(LSBU_Hub.jpg) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+        height: 100vh;
+         }
+
+         .main{
+                width: 250px;
+                margin: 0px auto;
+
+                position: relative;
+                top: 170px;
+                text-align: center;
+                 
+                background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(blur-1.jpg) ;
+                background-repeat: no-repeat;
+                background-size: cover; 
+                padding: 20px;
+
+                border: solid 3px white;
+                border-radius: 10px;         
+          }
+          .reg{
+            color: white;
+          }
+          #feed{
+                width: 200px;
+                padding: 7px;
+                background: transparent;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: lighter;
+                color: white;
+          }
+          #nm{
+            width: 200px;
+                padding: 7px;
+                background: transparent;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: lighter;
+                color: white;
+
+          }
+          #btn-2{
+                width: 200px;
+                padding: 5px;
+                border-radius: 5px;
+                border: solid 3px white;
+             
+            }
+            #btn-2:hover{
+               border: solid 3px black; 
+               transition: 0.6s;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="csas.html">
+               <img src="logo.png" alt="Logo" width="120" height="50" class="d-inline-block align-text-top" id="logo">
+              </a>
+              <a href="profile.html" id="a2"><h3 class="logop"> < Back</h3></a>
+            </div>
+          </nav>  
+    </div>
+
+    <div class="main">
+        <br>
+        <h2 class="reg">Feedback...</h2>
+        <br>
+        <form action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="dfa4fc02-94b9-4fa2-8b5c-4c304dad8e89"> 
+            <input type="text" placeholder="Name:" id="nm" name="Name:" required>
+            <br><br>
+            <input type="text" placeholder="Feedback:" id="feed" name="Feedback:" required>
+            <br><br>
+            <button id="btn-2">SUBMIT</button>
+            <br>
+
+        </form>
+
+    </div>
+    
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="popper.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>

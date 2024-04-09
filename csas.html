@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSBU Smart Attendance</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+         background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(b4.jpg) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+        }
+         .header{
+            background-color: white;
+            padding: 2px;
+            font-family:Arial, Helvetica, sans-serif;
+         }
+           #logo{
+            padding: 5px;
+           }
+            .main{
+                width: 250px;
+                margin: 0px auto;
+
+                position: relative;
+                top: 170px;
+                text-align: center;
+                 
+                background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(blur-1.jpg) ;
+                background-repeat: no-repeat;
+                background-size: cover; 
+                padding: 20px;
+
+                border: solid 3px white;
+                border-radius: 10px;
+
+            
+
+            }
+            #account{
+                width: 200px;
+                padding: 7px;
+                background: transparent;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: lighter;
+                color: white;
+
+            }
+            #password{
+                width: 200px;
+                padding: 7px;
+                background: transparent;
+                border: solid 3px white;
+                border-radius: 5px;
+                font-weight: bold;
+                color: white;
+
+            }
+            #btn-1{
+                width: 200px;
+                padding: 5px;
+                border-radius: 5px;
+                border: solid 3px white;
+             
+            }
+            #btn-1:hover{
+               border: solid 3px black; 
+               transition: 0.6s;
+            }
+            .main h2{
+                color: aliceblue;
+            }
+            .logop{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="csas.html">
+                <img src="logo.png" alt="Logo" width="120" height="50" class="d-inline-block align-text-top" id="logo">
+              </a>
+              <h3 class="logop">Smart Attendance System</h3>
+            </div>
+          </nav>   
+    </div>
+
+  <div class="main">
+    <br>
+    <h2>Log In...</h2>
+    <br>
+    <input type="text"placeholder="Account: " value=""  id="account" name="Account" required> 
+    <br><br>
+    <input type="password" placeholder="Pass****" id="password" name="password" required>
+    <br><br>
+    <a href="submit-attendance.html" id="a1"><button id="btn-1">LOG IN</button></a>
+    <br>
+
+  </div>
+    
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="popper.js"></script>
+    <script src="jquery.js"></script>
+    <script src="js-1.js"></script>
+    <script>
+         window.alert("Please"+" "+"wait."+"Your"+" "+"location"+" "+"is"+" "+"Checking");
+
+
+    </script>
+</body>
+</html>
